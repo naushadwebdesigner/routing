@@ -4,6 +4,7 @@ import { AboutComponent } from './comps/about/about.component';
 import { LoginComponent } from './comps/login/login.component';
 import { ContactComponent } from './comps/contact/contact.component';
 import { PageNotFoundComponent } from './comps/page-not-found/page-not-found.component';
+import { ProfileComponent } from './comps/profile/profile.component';
 
 export const routes: Routes = [
   {
@@ -24,7 +25,12 @@ export const routes: Routes = [
     component: ContactComponent,
   },
   {
+    path: 'profile/:id/:name/:email',
+    component: ProfileComponent,
+  },
+
+  {
     path: '**',
-    component:PageNotFoundComponent,
-  }
+    component: PageNotFoundComponent,
+  },
 ];
