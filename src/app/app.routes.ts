@@ -25,7 +25,7 @@ export const routes: Routes = [
     component: ContactComponent,
   },
   {
-    path: 'profile/:id/:name/:email',
+    path: 'profile/:id/:name',
     component: ProfileComponent,
   },
 
